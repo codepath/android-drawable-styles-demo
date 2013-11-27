@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawableStylesDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_view_style">ViewStyleActivity</string>
+    <string name="title_activity_layer_list">LayerListActivity</string>
+    <string name="title_activity_nine_path">NinePathActivity</string>
+    <string name="title_activity_styles">StylesActivity</string>
+    <string name="title_activity_themes">ThemesActivity</string>
+
+</resources>

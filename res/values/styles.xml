@@ -1,0 +1,93 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+ 
+    <!-- Applied in AndroidManifest.xml to ThemesActivity -->
+    <style name="SpecialActivityTheme" parent="AppBaseTheme">
+
+        <!-- These are your custom properties -->
+        <item name="android:buttonStyle">@style/NiceBlueButton.Padded</item>
+        <item name="android:textViewStyle">@style/SpecialActivityTheme.Widget.TextView.Custom</item>
+        <item name="android:actionBarStyle">@style/SpecialActivityTheme.MyActionBar</item>
+        <item name="android:windowBackground">@drawable/shape_default_bg</item>
+    </style>
+
+    <style name="SpecialActivityTheme.MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#781929</item>
+        <item name="android:titleTextStyle">@style/SpecialActivityTheme.MyActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="SpecialActivityTheme.MyActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#E0E4CC</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <!-- This is the custom textview styles for this activity -->
+    <style name="SpecialActivityTheme.Widget.TextView.Custom" parent="android:Widget.TextView">
+        <item name="android:textColor">#781929</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- Style for 9-Patch Button -->
+    <style name="FancyButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <!-- Base Style for White Buttons -->
+    <style name="SimpleWhiteButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Inherits from SimpleWhiteButton Style and extends with additional style items -->
+    <style name="NiceBlueButton" parent="SimpleWhiteButton">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@drawable/selector_nice_button</item>
+    </style>
+
+    <style name="NiceBlueButton.Padded">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+</resources>
